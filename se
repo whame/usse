@@ -1,0 +1,11 @@
+// US altgr-intl keyboard layout with additional å, ä, and ö. Useful when one
+// want to switch between English and Swedish with minimal difference in layout.
+// Author: Waqar Hameed (github.com/whame/usse).
+xkb_symbols "usse" {
+    include "us(altgr-intl)"
+    name[Group1]="Swedish (based on US, intl., with AltGr dead keys)";
+
+    key <AD11> { [ aring,      Aring,      bracketleft, braceleft ] };
+    key <AC10> { [ odiaeresis, Odiaeresis, semicolon,   colon ] };
+    key <AC11> { [ adiaeresis, Adiaeresis, apostrophe,  quotedbl ] };
+};
