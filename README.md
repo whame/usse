@@ -7,7 +7,20 @@ minimal difference in layout.
 
 ![layout](usse.png)
 
-## How do I install this (Linux)?
+## Install
+
+### Script
+
+Just run the install script (you probably need to run it with `sudo`):
+
+```
+./install.py
+```
+
+Now you should be able to choose `usse` as a variant for the Swedish keyboard
+layout (run for example `setxkbmap se usse`).
+
+### Manually
 
 - Add the contents of the file `se` to the end of
   `/usr/share/X11/xkb/symbols/se`
@@ -51,9 +64,6 @@ minimal difference in layout.
   swl             se: Swedish Sign Language
 ...
 ```
-
-Now you should be able to choose `usse` as a variant for the Swedish keyboard
-layout (run for example `setxkbmap se usse`).
 
 ## Can I use this for the standard US layout (not intl. etc.)?
 
