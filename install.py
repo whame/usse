@@ -51,7 +51,7 @@ insert_index = 0
 with open(EVDEV_LST_OUTPUT, "r") as fd:
     output_lines = fd.readlines()
     for i, line in enumerate(output_lines):
-        if re.search("\s+se:\s+", line):
+        if re.search(r"\s+se:\s+", line):
             # We found the Swedish variants.
             insert_index = i
             break
